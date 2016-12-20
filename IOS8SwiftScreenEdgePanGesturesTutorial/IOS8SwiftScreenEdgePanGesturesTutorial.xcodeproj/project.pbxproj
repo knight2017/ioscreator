@@ -164,9 +164,11 @@
 				TargetAttributes = {
 					E2BF83AE1A65AC3D0032EDE6 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0810;
 					};
 					E2BF83C31A65AC3D0032EDE6 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = E2BF83AE1A65AC3D0032EDE6;
 					};
 				};
@@ -343,6 +345,7 @@
 				INFOPLIST_FILE = IOS8SwiftScreenEdgePanGesturesTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -353,6 +356,7 @@
 				INFOPLIST_FILE = IOS8SwiftScreenEdgePanGesturesTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -371,6 +375,7 @@
 				INFOPLIST_FILE = IOS8SwiftScreenEdgePanGesturesTutorialTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS8SwiftScreenEdgePanGesturesTutorial.app/IOS8SwiftScreenEdgePanGesturesTutorial";
 			};
 			name = Debug;
@@ -386,6 +391,7 @@
 				INFOPLIST_FILE = IOS8SwiftScreenEdgePanGesturesTutorialTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS8SwiftScreenEdgePanGesturesTutorial.app/IOS8SwiftScreenEdgePanGesturesTutorial";
 			};
 			name = Release;
@@ -409,6 +415,7 @@
 				E2BF83D01A65AC3D0032EDE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2BF83D11A65AC3D0032EDE6 /* Build configuration list for PBXNativeTarget "IOS8SwiftScreenEdgePanGesturesTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +424,7 @@
 				E2BF83D31A65AC3D0032EDE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,15 +14,15 @@ class ViewController: UIViewController {
   var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
   var currentRadius:CGFloat = 0.0
   
-  func rotateBall(sender: UIScreenEdgePanGestureRecognizer) {
-    if sender.state == .Ended {
+  func rotateBall(_ sender: UIScreenEdgePanGestureRecognizer) {
+    if sender.state == .ended {
       if self.currentRadius==360.0 {
         self.currentRadius=0.0
       }
       
-      UIView.animateWithDuration(1.0, animations: {
+      UIView.animate(withDuration: 1.0, animations: {
         self.currentRadius += 90.0
-        self.imageView.transform = CGAffineTransformMakeRotation((self.currentRadius * CGFloat(M_PI)) / 180.0)
+        self.imageView.transform = CGAffineTransform(rotationAngle: (self.currentRadius * CGFloat(M_PI)) / 180.0)
       })
     }
   }
@@ -31,8 +31,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self,
-    action: "rotateBall:")
-    screenEdgeRecognizer.edges = .Left
+    action: #selector(ViewController.rotateBall(_:)))
+    screenEdgeRecognizer.edges = .left
     view.addGestureRecognizer(screenEdgeRecognizer)
   }
 
